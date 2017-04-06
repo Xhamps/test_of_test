@@ -1,16 +1,16 @@
-const Math =  {
-  some(value = 1) {
+const math =  {
+  sum (value = 1) {
     return value + value
   },
-  multiply(count){
+  multiply (count){
     let result = 0;
 
     for(let i = 1 ; i < count + 1; i++){
-      result += this.some(i);
+      result += this.sum(i);
     }
 
     return result;
   }
 };
 
-module.exports = Math;  
+module.exports = math;  

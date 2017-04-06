@@ -18,7 +18,7 @@ module.exports = {
             'syntax-dynamic-import',
             'transform-async-to-generator',
             'transform-regenerator',
-            'transform-runtime'
+            'transform-runtime',
           ]
         }
       }]
