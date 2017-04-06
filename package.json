@@ -1,0 +1,29 @@
+{
+  "name": "test_of_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "test-mocha": "mocha-webpack --webpack-config webpack.config-test.js \"mocha_test/**/*.test.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-regenerator": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-webpack": "^0.7.0",
+    "sinon": "^2.1.0",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
+  }
+}
