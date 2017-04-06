@@ -15,6 +15,7 @@ module.exports = {
         options: {
           presets: [['es2015', {modules: false}]],
           plugins: [
+            'rewire',
             'syntax-dynamic-import',
             'transform-async-to-generator',
             'transform-regenerator',
