@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "test-mocha": "mocha-webpack --webpack-config webpack.config-test.js \"mocha_test/**/*.test.js\""
+    "test-mocha": "mocha-webpack --webpack-config webpack.config.js \"mocha_test/**/*.test.js\""
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +24,6 @@
     "webpack": "^2.3.3"
   },
   "dependencies": {
-    "babel-plugin-rewire": "^1.0.0",
-    "moment": "^2.18.1"
+    "babel-plugin-rewire": "^1.0.0"
   }
 }

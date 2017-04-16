@@ -9,4 +9,4 @@ const injectedDependencies =  {
   },
 };
 
-module.exports = injectedDependencies;  
+export default injectedDependencies;  
