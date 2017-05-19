@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import math from '../app/math';
 import sinon from 'sinon';
 
-describe.only('With delay', () => {
+describe('With delay', () => {
   it('identifies the correct callback call with stub', (done) => {
   	const callback = sinon.stub();
     math.compareWithDelay(5, 3, callback);
