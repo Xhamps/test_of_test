@@ -9,4 +9,4 @@ const injectedDependencies =  {
   },
 };
 
-export default injectedDependencies;  
+export default injectedDependencies;

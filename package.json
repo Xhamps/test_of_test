@@ -5,11 +5,24 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "test-mocha": "mocha-webpack --webpack-config webpack.config.js \"mocha_test/**/*.test.js\""
+    "test-mocha": "mocha-webpack --webpack-config webpack.config.js \"mocha_test/**/*.test.js\"",
+    "test-ava": "ava"
+  },
+  "ava": {
+    "files": ["ava/**/*.test.js"],
+    "source": ["app/**/*.{js}"],
+    "concurrency": 5,
+    "powerAssert": false,
+    "require": ["babel-register", "babel-polyfill"]
+  },
+  "babel": {
+    "plugins": ["rewire"],
+    "presets": ["@ava/stage-4", "es2015"]
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^0.19.1",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -24,6 +37,8 @@
     "webpack": "^2.3.3"
   },
   "dependencies": {
-    "babel-plugin-rewire": "^1.0.0"
+    "babel-plugin-rewire": "^1.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-register": "^6.24.1"
   }
 }

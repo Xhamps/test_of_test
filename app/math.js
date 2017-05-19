@@ -13,4 +13,4 @@ const math =  {
   }
 };
 
-export default math;  
+export default math;
