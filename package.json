@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "test-mocha": "mocha-webpack --webpack-config webpack.config.js \"mocha_test/**/*.test.js\"",
-    "test-jest": "jest"
+    "test-jest": "jest jest_test"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "webpack": "^2.3.3"
   },
   "dependencies": {
+    "babel-jest": "20.0.3",
     "babel-plugin-rewire": "^1.0.0",
     "jest": "^20.0.3"
   }
