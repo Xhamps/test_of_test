@@ -1,24 +1,16 @@
 {
   "presets": [
-    [
-      "es2015",
-      {
-        "modules": false
-      }
-    ]
+    [ "es2015", { "modules": false } ]
   ],
   "env": {
     "test": {
-      "plugins": [
-        "transform-es2015-modules-commonjs"
-      ]
+      "plugins": [ "transform-es2015-modules-commonjs" ]
     }
   },
   "plugins": [
     "syntax-dynamic-import",
     "transform-async-to-generator",
     "transform-regenerator",
-    "transform-runtime",
-    "rewire"
+    "transform-runtime"
   ]
 }

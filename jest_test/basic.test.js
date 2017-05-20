@@ -1,7 +1,5 @@
 import math from '../app/math';
 
-jest.unmock('../app/math');
-
-test('blau', () => {
+test('sum(3) should equals 6', () => {
   expect(math.sum(3)).toEqual(6);
 });
