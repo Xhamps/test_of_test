@@ -6,4 +6,4 @@ const withDependencies = {
   },
 };
 
-export default withDependencies;  
+export default withDependencies;
